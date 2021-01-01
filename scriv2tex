@@ -1,0 +1,143 @@
+#!/usr/local/bin/python3
+
+import glob, os, re, shutil, stat, subprocess, time
+
+class Project:
+  def __init__(self, syncDir):
+    self.syncDir = syncDir
+    self.includesFilepath = "%s/Draft/includes.tex" % syncDir
+    pattern = "(.+?).sync"
+    result = re.match(pattern, syncDir)
+    self.name = result.group(1)
+    # create output tex directory if needed
+    self.texDir = "%s.tex" % self.name
+    if not os.path.exists(self.texDir):
+      print("creating tex directory '%s'" % self.texDir)
+      os.mkdir(self.texDir)
+
+  def updateTexDir(self, syncDir):
+    hasUpdate = False
+    hasNew = False
+    hasDelete = False
+    sourceFileDefinitions = self.getSourceFileDefinitions()
+    targetFileDefinitions = self.getTargetFileDefinitions()
+    for filename, sourceFileDefinition in sourceFileDefinitions.items():
+      targetFileDefinition = targetFileDefinitions.pop(filename, None)
+      if targetFileDefinition:
+        if targetFileDefinition["modificationTime"] < sourceFileDefinition["modificationTime"]:
+          print("update: %s" % filename)
+          shutil.copyfile(sourceFileDefinition["filepath"], "%s/%s" % (self.texDir, filename))
+          hasUpdate = True
+      else:
+        print("new: %s" % filename)
+        shutil.copyfile(sourceFileDefinition["filepath"], "%s/%s" % (self.texDir, filename))
+        hasNew = True
+    for filename, targetFileDefinition in targetFileDefinitions.items():
+      print("deleted: %s" % filename)
+      if os.path.isfile(targetFileDefinition["filepath"]):
+        os.remove(targetFileDefinition["filepath"])
+      hasDelete = True
+
+    if hasNew or hasDelete:
+      self.updatePreamble()
+      shutil.copyfile(sourceFileDefinitions[self.preambleTargetFilename]["filepath"], "%s/%s" % (self.texDir, self.preambleTargetFilename))
+      self.compile()
+    elif hasUpdate:
+      self.compile()
+
+  def updatePreamble(self):
+    # generate the new includes text
+    newIncludes = "\\begin{document}\n\\include{" + "}\n\\include{".join(self.includes) + "}\n\\end{document}"
+
+    with open(self.preambleFilepath, "r+") as preambleFile:
+      # find line with \begin{document}
+      # (weird work around to avoid: "OSError: telling position disabled by next() call")
+      for line in iter(preambleFile.readline, ''):
+        result = re.match(r"\s*\\begin\{\s*document\s*\}\s*", line)
+        if result:
+          break
+        position = preambleFile.tell()
+      
+      # if found the compare remainder of the preamble file to the new includes text
+      if position:
+        preambleFile.seek(position)
+        currentIncludes = preambleFile.read()
+        # if the text has changed the update the preamble with the new includes text
+        if currentIncludes != newIncludes:
+          print("updating preamble: %s" % self.preambleFilepath)
+          preambleFile.seek(position)
+          preambleFile.write(newIncludes)
+          preambleFile.truncate()
+      # otherwise append the new includes text to the end of the preamble file
+      else:
+        print("appending includes to preamble")
+        preambleFile.write(newIncludes)
+
+  def getSourceFileDefinitions(self):
+    self.includes = []
+    return self.getFileDefinitions('%s/Draft' % self.syncDir, r"([0-9]+)\s+(.+)")
+
+  def getTargetFileDefinitions(self):
+    return self.getFileDefinitions(self.texDir, None)
+
+  def getFileDefinitions(self, path, pattern):
+    fileDefinitions = {}
+    filepaths = [f for f in os.listdir(path) if re.match(r'(.*?)\[[0-9]+\]\.tex$', f)]
+    for filepath in filepaths:
+      filepath = os.path.join(path, filepath)
+      fileDefinition = {"filepath" : filepath}
+
+      # get last modification time of file
+      fileStatsObj = os.stat(filepath)
+      fileDefinition["modificationTime"] = fileStatsObj [ stat.ST_MTIME ]
+
+      if pattern:
+        syncFilename = os.path.basename(filepath)
+        result = re.match(pattern, syncFilename)
+        if result:
+          index = int(result.group(1)) - 1
+          if index > len(self.includes):
+            self.includes.extend([None] * (index - len(self.includes)))
+          filename = result.group(2)
+          filename = filename.replace(" ", "_")
+          if index > 0: # skip preamble
+            self.includes[index - 1] = os.path.splitext(filename)[0]
+          else:
+            self.preambleFilepath = filepath
+            self.preambleTargetFilename = filename
+          fileDefinitions[filename] = fileDefinition
+      else:
+        filename = os.path.basename(filepath)
+        fileDefinitions[filename] = fileDefinition
+
+    return fileDefinitions
+
+  def compile(self):
+    compileScriptPath = "%s/compile.sh" % self.texDir
+    if os.path.exists(compileScriptPath):
+      bashCommand = [compileScriptPath, "-t", os.path.splitext(self.preambleTargetFilename)[0]]
+      print(bashCommand)
+      with subprocess.Popen(bashCommand, stdout=subprocess.PIPE, bufsize=1, universal_newlines=True) as p:
+        for line in p.stdout:
+          print(line, end='') # process line here
+
+      if p.returncode != 0:
+        raise CalledProcessError(p.returncode, p.args)
+      else:
+        print("compile success!!!")
+    else:
+      print("\"compile.sh\" - not found")
+
+def main():
+  syncDir2Project = {}
+  while True:
+    for syncDir in glob.iglob('*.sync'):
+      if syncDir not in syncDir2Project:
+        syncDir2Project[syncDir] = Project(syncDir)
+      project = syncDir2Project[syncDir]
+      project.updateTexDir(syncDir)
+    time.sleep(3)
+
+if __name__ == "__main__":
+  # execute only if run as a script
+  main()
