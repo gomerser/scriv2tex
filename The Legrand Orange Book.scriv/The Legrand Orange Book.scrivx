@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrivenerProject Identifier="F9BE1A8D-E715-43AA-920E-85FCACE21154" Version="2.0" Creator="SCRMAC-3.2.2-14632" Device="MacBook-Air-2" Author="" Modified="2021-01-02 15:59:12 +0100" ModID="395E3E4C-7049-4085-B5DC-6EA77166EB25">
+    <Binder>
+        <BinderItem UUID="F4FCF815-C895-4EF4-BCA7-9166F78294D8" Type="DraftFolder" Created="2020-12-28 08:52:59 +0100" Modified="2020-12-28 08:52:59 +0100">
+            <Title>Draft</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem UUID="5FBDC2A6-BE05-4A4B-AEFB-0298FD7B5227" Type="Text" Created="2020-12-28 08:52:59 +0100" Modified="2021-01-01 21:38:09 +0100">
+                    <Title>preamble</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>2016,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="008FF318-55F0-4A4C-9246-B5ED1680BFF8" Type="Text" Created="2020-12-28 08:54:39 +0100" Modified="2021-01-02 15:59:12 +0100">
+                    <Title>title page</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>716,10</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="6F69E5EE-889E-4020-A63F-429BA176837D" Type="Text" Created="2020-12-28 09:02:16 +0100" Modified="2020-12-30 22:45:55 +0100">
+                    <Title>copyright page</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>1136,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="4410F3C8-8A38-4A96-8537-458D03169565" Type="Text" Created="2020-12-28 09:03:23 +0100" Modified="2020-12-30 23:24:03 +0100">
+                    <Title>table of contents</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>497,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="513381F7-05CA-4F2C-B850-C67BF7A9FB15" Type="Folder" Created="2020-12-28 09:06:08 +0100" Modified="2020-12-30 22:46:16 +0100">
+                    <Title>part one</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>187,0</TextSelection>
+                    </TextSettings>
+                    <CorkboardAndOutliner>
+                        <SelectedSubdocumentUUIDs>B98BF5B9-98D8-49E6-9115-184EFD44C720</SelectedSubdocumentUUIDs>
+                    </CorkboardAndOutliner>
+                    <Children>
+                        <BinderItem UUID="B98BF5B9-98D8-49E6-9115-184EFD44C720" Type="Text" Created="2020-12-28 09:05:48 +0100" Modified="2020-12-30 23:23:55 +0100">
+                            <Title>chapter 1</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>628,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="DA84CDE7-35B8-4744-A910-54FA9A9C9F6B" Type="Text" Created="2020-12-28 09:09:42 +0100" Modified="2020-12-30 23:23:39 +0100">
+                            <Title>chapter 2</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>739,2</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="2D8B1E96-9A55-47CF-BFF7-4E2F3B88E1D3" Type="Folder" Created="2020-12-28 09:10:32 +0100" Modified="2020-12-30 22:47:52 +0100">
+                    <Title>part two</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>186,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="55D2A41A-7B4F-456B-8203-EB2E159C20B2" Type="Text" Created="2020-12-28 09:11:08 +0100" Modified="2020-12-30 22:48:30 +0100">
+                            <Title>chapter 3</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>1270,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="D7AA771A-9DEF-40F1-AA4A-34709FE28B52" Type="Text" Created="2020-12-28 09:11:58 +0100" Modified="2020-12-30 22:48:45 +0100">
+                    <Title>bibliography</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>551,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="62D303E2-66BB-48AD-A77B-06169CA319B8" Type="Text" Created="2020-12-28 09:12:34 +0100" Modified="2020-12-30 22:48:45 +0100">
+                    <Title>index</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>493,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem UUID="EAB2CA35-D4C4-4F9D-A179-4464E9DA3D15" Type="ResearchFolder" Created="2020-12-28 08:52:59 +0100" Modified="2020-12-28 08:52:59 +0100">
+            <Title>Research</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+        </BinderItem>
+        <BinderItem UUID="A3245596-B6DF-4342-A8C0-B90B531FFB6B" Type="TrashFolder" Created="2020-12-28 08:52:59 +0100" Modified="2020-12-28 08:52:59 +0100">
+            <Title>Trash</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem UUID="CB7E7A47-E464-4E4E-8B1B-C9205603D1B0" Type="Text" Created="2020-12-28 16:49:53 +0100" Modified="2020-12-28 16:49:55 +0100">
+                    <Title>xxx</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+    </Binder>
+    <Collections>
+        <Collection Type="Binder" ID="5E67F38A-1725-4AE1-833D-F7445D3AEB9F" Color="0.150563 0.150563 0.150563">
+            <Title>Binder</Title>
+        </Collection>
+        <Collection Type="RecentSearch" ID="363BD217-C01F-4E4F-A22B-96A43A484E59" Color="0.190667 0.172702 0.216529">
+            <Title>Search Results</Title>
+        </Collection>
+        <Collection Type="Arbitrary" ID="55B56CB2-2E11-4259-BA02-E2204B881DA2" Color="0.992 0.973 0.769">
+            <Title>Updated Documents</Title>
+        </Collection>
+    </Collections>
+    <SectionTypes>
+        <TypeDefinitions>
+            <Type ID="ADDAF870-36C4-4AC8-AD7A-C4C21D67C0EB">Heading</Type>
+            <Type ID="4EB0CCDF-7ED7-4C09-A55F-630830795035">Sub-Heading</Type>
+            <Type ID="F793827C-9183-46BF-9B0F-8D1489E4E96C">Section</Type>
+        </TypeDefinitions>
+        <LevelTypes>
+            <Folders>
+                <Type>ADDAF870-36C4-4AC8-AD7A-C4C21D67C0EB</Type>
+            </Folders>
+            <Containers>
+                <Type>F793827C-9183-46BF-9B0F-8D1489E4E96C</Type>
+            </Containers>
+            <Files>
+                <Type>F793827C-9183-46BF-9B0F-8D1489E4E96C</Type>
+            </Files>
+        </LevelTypes>
+    </SectionTypes>
+    <LabelSettings>
+        <Title>Label</Title>
+        <DefaultLabelID>-1</DefaultLabelID>
+        <Labels>
+            <Label ID="-1">No Label</Label>
+            <Label ID="0" Color="0.993495 0.701207 0.732587">Red</Label>
+            <Label ID="1" Color="0.995418 0.790946 0.652385">Orange</Label>
+            <Label ID="2" Color="0.997722 0.89273 0.652569">Yellow</Label>
+            <Label ID="3" Color="0.715855 0.948712 0.697692">Green</Label>
+            <Label ID="4" Color="0.702319 0.888276 0.974252">Blue</Label>
+            <Label ID="5" Color="0.957566 0.766747 0.999616">Purple</Label>
+        </Labels>
+    </LabelSettings>
+    <StatusSettings>
+        <Title>Status</Title>
+        <DefaultStatusID>-1</DefaultStatusID>
+        <StatusItems>
+            <Status ID="-1">No Status</Status>
+            <Status ID="0">To Do</Status>
+            <Status ID="1">In Progress</Status>
+            <Status ID="2">First Draft</Status>
+            <Status ID="3">Revised Draft</Status>
+            <Status ID="4">Final Draft</Status>
+            <Status ID="5">Done</Status>
+        </StatusItems>
+    </StatusSettings>
+    <ProjectTargets Notify="No">
+        <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2020-12-28 08:52:57 +0100" IgnoreDeadline="Yes">0</DraftTarget>
+        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2021-01-03 00:00:00 +0100" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
+        <PreviousSession Words="0" Characters="-1" Date="2021-01-02 15:59:04 +0100"/>
+    </ProjectTargets>
+    <RecentWritingHistory Date="2021-01-02 00:00:00 +0100">
+        <DraftWordCount>0</DraftWordCount>
+        <DraftCharCount>-1</DraftCharCount>
+        <OtherWordCount>0</OtherWordCount>
+        <OtherCharCount>0</OtherCharCount>
+    </RecentWritingHistory>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"/>
+    <ExternalSyncMap>
+        <SyncItem ID="CB7E7A47-E464-4E4E-8B1B-C9205603D1B0">11</SyncItem>
+        <SyncItem ID="2D8B1E96-9A55-47CF-BFF7-4E2F3B88E1D3">7</SyncItem>
+        <SyncItem ID="62D303E2-66BB-48AD-A77B-06169CA319B8">10</SyncItem>
+        <SyncItem ID="4410F3C8-8A38-4A96-8537-458D03169565">3</SyncItem>
+        <SyncItem ID="DA84CDE7-35B8-4744-A910-54FA9A9C9F6B">6</SyncItem>
+        <SyncItem ID="B98BF5B9-98D8-49E6-9115-184EFD44C720">5</SyncItem>
+        <SyncItem ID="6F69E5EE-889E-4020-A63F-429BA176837D">2</SyncItem>
+        <SyncItem ID="5FBDC2A6-BE05-4A4B-AEFB-0298FD7B5227">0</SyncItem>
+        <SyncItem ID="008FF318-55F0-4A4C-9246-B5ED1680BFF8">1</SyncItem>
+        <SyncItem ID="513381F7-05CA-4F2C-B850-C67BF7A9FB15">4</SyncItem>
+        <SyncItem ID="55D2A41A-7B4F-456B-8203-EB2E159C20B2">8</SyncItem>
+        <SyncItem ID="D7AA771A-9DEF-40F1-AA4A-34709FE28B52">9</SyncItem>
+    </ExternalSyncMap>
+</ScrivenerProject>
