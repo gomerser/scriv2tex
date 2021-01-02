@@ -15,7 +15,7 @@ The *scriv2tex* script is run in a terminal and therefore needs to be added your
 ## Usage
 ### Project initialisation
 1. Create a directory for syncing your project with file extension ".sync".
-2. In Scrivener choose **File->Sync->With External Folder...**
+2. In Scrivener choose **File->Sync->with External Folder...**
 3. Choose the external folder created in step 1.
 4. Select the following options:
 - [x] Sync the contents of the Draft folder
@@ -34,7 +34,17 @@ scriv2tex
 
 ### Project usage
 Next to the directory created for syncing your project a new directory has been created with file extension ".tex". This is where the *scriv2tex* script syncs the TeX documents. Here you can also store external content required by your TeX documents, like style sheets, pictures, etc.
-The *scriv2tex* script also looks here for a script called "compile.sh", which will, if present, be executed after every sync of your project (**File->Sync->With External Folder Now**). For an example of compile script, see the example project folder "The Legrand Orange Book.tex".
+The *scriv2tex* script also looks here for a script called "compile.sh", which will, if present, be executed after every sync of your project (**File->Sync->with External Folder Now**). For an example of compile script, see the example project folder "The Legrand Orange Book.tex".
+
+### Tip
+Since you'll now will be choosing **File->Sync->with External Folder Now** frequntly, it's worthwhile to create a keyboard shorcut. Fortunately this is easy on a Mac:
+1. Head to your Mac’s System Preferences (you can find it by hitting the Apple logo at top-left, then clicking “System Preferences”)
+2. Click Keyboard
+3. Click the Shortcuts tab, then click App Shortcuts – the bottom option in the left pane.
+4. Click the “+” button to create your keyboard shortcut.
+5. Pick "Scrivener" and type the exact name of the menu item in the "Menu Title" field, e.g. "with External Folder Now"
+6. Finally, you need to pick your keyboard shortcut. Make sure the key combination you want isn’t already taken by opening your program and testing it out. If something happens, that shortcut is already assigned – if nothing happens and you hear a warning sound, the shortcut is available. I chose ⇧⌘S.
+7. Click Add when you’ve got everything set the way you want it. The change will take affect immediately.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
