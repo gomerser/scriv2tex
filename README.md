@@ -26,7 +26,7 @@ The *scriv2tex* script is run in a terminal and therefore needs to be added your
 - [x] Check external folder on project open and automatically sync on close
 5. Select the format "Plain Text" with extension "tex".
 6. Confirm the selections by pressing the "Sync" button.
-7. Change to the parent directory of the ".sync" folder where the Scrivener project was synced with and start the blocking *scriv2tex* script:
+7. Open a terminal and change to the parent directory of the ".sync" folder where the Scrivener project was synced with. Then start the blocking *scriv2tex* script:
 ```bash
 scriv2tex
 ```
