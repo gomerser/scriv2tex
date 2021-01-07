@@ -1,8 +1,8 @@
 #!/bin/bash
 
-SCRIPT_DIR="$(dirname "$(stat -f "$0")")"
-echo XXX
-echo ${SCRIPT_DIR}
+# exit when any command fails
+set -e
+
 while getopts t: flag
 do
     case "${flag}" in
@@ -11,9 +11,10 @@ do
 done
 echo "${target}"
 
+SCRIPT_DIR="$(dirname "$(stat -f "$0")")"
 cd "${SCRIPT_DIR}"
-pdflatex ${target}
+pdflatex -halt-on-error ${target}
 makeindex ${target}.idx -s StyleInd.ist
 biber ${target}
-pdflatex ${target} x 2
+pdflatex -halt-on-error ${target} x 2
 open ${target}.pdf
