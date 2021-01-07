@@ -122,7 +122,7 @@ class Project:
           print(line, end='') # process line here
 
       if p.returncode != 0:
-        raise CalledProcessError(p.returncode, p.args)
+        print("compile failed")
       else:
         print("compile success!!!")
     else:
