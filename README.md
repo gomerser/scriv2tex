@@ -43,7 +43,7 @@ The *scriv2tex* script also looks here for a script called "compile.sh", which w
 The project contains an adapted example from latextemplates.com called "[The Legrand Orange Book](https://www.latextemplates.com/template/the-legrand-orange-book)".
 I copy and pasted the various sections, parts and chapters from the *main.tex* into seperate text files in Scrivener and copied the compilations insctructions into "compile.sh". Other reference data like style sheets and pictures were copied into the generated ".tex" directory.
 
-### Tip
+### Tip 1
 Since you'll now will be choosing **File->Sync->with External Folder Now** frequntly, it's worthwhile to create a keyboard shorcut. Fortunately this is easy on a Mac:
 1. Head to your Mac’s System Preferences (you can find it by hitting the Apple logo at top-left, then clicking “System Preferences”)
 2. Click Keyboard
@@ -53,10 +53,5 @@ Since you'll now will be choosing **File->Sync->with External Folder Now** frequ
 6. Finally, you need to pick your keyboard shortcut. Make sure the key combination you want isn’t already taken by opening your program and testing it out. If something happens, that shortcut is already assigned – if nothing happens and you hear a warning sound, the shortcut is available. I chose ⇧⌘S.
 7. Click Add when you’ve got everything set the way you want it. The change will take affect immediately.
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+### Tip 2
+The example compile script concludes with opening Preview to show the updated content. I found this not to work reliably and instead now use [Skim](https://skim-app.sourceforge.io) to monitor the generated pdf files, which works like a charm.
