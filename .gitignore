@@ -1,1 +1,18 @@
 .DS_Store
+
+# exclude sync folder
+The Legrand Orange Book.sync/*
+
+# except the folder itself
+!The Legrand Orange Book.sync/.gitkeep
+
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.idx
+*.ilg
+*.ind
+*.log
+*.pdf
+*.tex

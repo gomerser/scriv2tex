@@ -3,12 +3,12 @@
     <syncsOnlyDocumentsInCollection Type="Bool">No</syncsOnlyDocumentsInCollection>
     <takesSnapshots Type="Bool">No</takesSnapshots>
     <draftPlainTextExtension Type="String">tex</draftPlainTextExtension>
-    <folderRelPath Type="String">../test/The Legrand Orange Book.sync</folderRelPath>
+    <folderRelPath Type="String">The Legrand Orange Book.sync</folderRelPath>
     <draftFileFormat Type="Int">0</draftFileFormat>
     <plainTextAddsParagraphPadding Type="Bool">No</plainTextAddsParagraphPadding>
     <importShowsContainersOnly Type="Bool">Yes</importShowsContainersOnly>
     <usesFileNumbering Type="Bool">Yes</usesFileNumbering>
-    <folderPath Type="String">/Users/gomerser/test/The Legrand Orange Book.sync</folderPath>
+    <folderPath Type="String">/Users/gomerser/dev/scriv2tex/The Legrand Orange Book.sync</folderPath>
     <enabled Type="Bool">Yes</enabled>
     <automaticallyCheckForChanges Type="Bool">Yes</automaticallyCheckForChanges>
     <importDestinationUUID Type="String">EAB2CA35-D4C4-4F9D-A179-4464E9DA3D15</importDestinationUUID>

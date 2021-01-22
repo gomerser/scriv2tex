@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="F9BE1A8D-E715-43AA-920E-85FCACE21154" Version="2.0" Creator="SCRMAC-3.2.2-14632" Device="MacBook-Air-2" Author="" Modified="2021-01-02 15:59:12 +0100" ModID="395E3E4C-7049-4085-B5DC-6EA77166EB25">
+<ScrivenerProject Identifier="F9BE1A8D-E715-43AA-920E-85FCACE21154" Version="2.0" Creator="SCRMAC-3.2.2-14632" Device="MacBook-Air-2" Author="" Modified="2021-01-22 23:52:30 +0100" ModID="D2FC8881-DD74-4175-B914-F409A23A97F8">
     <Binder>
         <BinderItem UUID="F4FCF815-C895-4EF4-BCA7-9166F78294D8" Type="DraftFolder" Created="2020-12-28 08:52:59 +0100" Modified="2020-12-28 08:52:59 +0100">
             <Title>Draft</Title>
@@ -16,7 +16,7 @@
                         <TextSelection>2016,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="008FF318-55F0-4A4C-9246-B5ED1680BFF8" Type="Text" Created="2020-12-28 08:54:39 +0100" Modified="2021-01-02 15:59:12 +0100">
+                <BinderItem UUID="008FF318-55F0-4A4C-9246-B5ED1680BFF8" Type="Text" Created="2020-12-28 08:54:39 +0100" Modified="2021-01-22 23:52:27 +0100">
                     <Title>title page</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -140,7 +140,7 @@
         </BinderItem>
     </Binder>
     <Collections>
-        <Collection Type="Binder" ID="5E67F38A-1725-4AE1-833D-F7445D3AEB9F" Color="0.150563 0.150563 0.150563">
+        <Collection Type="Binder" ID="5E67F38A-1725-4AE1-833D-F7445D3AEB9F" Color="0.112547 0.112547 0.112547">
             <Title>Binder</Title>
         </Collection>
         <Collection Type="RecentSearch" ID="363BD217-C01F-4E4F-A22B-96A43A484E59" Color="0.190667 0.172702 0.216529">
@@ -196,12 +196,12 @@
     </StatusSettings>
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2020-12-28 08:52:57 +0100" IgnoreDeadline="Yes">0</DraftTarget>
-        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2021-01-03 00:00:00 +0100" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="0" Characters="-1" Date="2021-01-02 15:59:04 +0100"/>
+        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2021-01-23 00:00:00 +0100" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
+        <PreviousSession Words="0" Characters="0" Date="2021-01-22 23:33:29 +0100"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2021-01-02 00:00:00 +0100">
+    <RecentWritingHistory Date="2021-01-22 00:00:00 +0100">
         <DraftWordCount>0</DraftWordCount>
-        <DraftCharCount>-1</DraftCharCount>
+        <DraftCharCount>0</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>

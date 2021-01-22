@@ -115,8 +115,7 @@ class Project:
   def compile(self):
     compileScriptPath = "%s/compile.sh" % self.texDir
     if os.path.exists(compileScriptPath):
-      bashCommand = [compileScriptPath, "-t", os.path.splitext(self.preambleTargetFilename)[0]]
-      print(bashCommand)
+      bashCommand = [compileScriptPath, "-t", os.path.splitext(self.preambleTargetFilename)[0], "-n", self.name]
       with subprocess.Popen(bashCommand, stdout=subprocess.PIPE, bufsize=1, universal_newlines=True) as p:
         for line in p.stdout:
           print(line, end='') # process line here
